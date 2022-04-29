@@ -1,0 +1,41 @@
+.jumbotron{
+    padding: 14px 14px;
+    margin:  15px 15px 15px 15px;
+    background-color: rgb(83, 189, 178);
+}
+.dispaly-form{
+  background-color: rgba(152, 236, 225, 0.589);
+}
+
+h2{
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+  /* .form-group input::placeholder {
+    color: #c0bdbd;
+    font-weight: 300;
+  }
+  
+  /*for invalid form controls*/
+  /* input.invalid {
+    border-color: red;
+  }  */
+
+ 
+
+  
+
+
+
+  

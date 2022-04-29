@@ -1,0 +1,28 @@
+.topnav{
+    text-align:center;
+    color: white;
+    background-color: rgb(11, 150, 136);
+    padding: 10px 10px;
+}
+
+.navbar-expand-md{
+    background-color: rgba(152, 236, 225, 0.589);
+}
+
+.ngbDropdownMenu{
+    color:red;
+}
+
+.topnav-right {
+    float: right;
+  }
+
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+
+  
+  
+ 
+  
+ 

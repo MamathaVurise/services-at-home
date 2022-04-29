@@ -1,0 +1,79 @@
+<header>
+    <div class="topnav">
+        <img src="assets/images/home1.jpg" width="75"/>
+        <h2>Services At Home</h2>
+    </div>
+</header>
+<!-- <hr> -->
+<!-- <h6>Find the service charges by selecting the required</h6> -->
+<nav class="navbar navbar-expand-md">
+<div class="navbar-collapse" [class.collapse]="collapsed" id="navbarContent">
+    <ul class="navbar-nav">
+      <li class="nav-item" ngbDropdown>
+        <a class="nav-link" ngbDropdownToggle id="navbarDropdown1" role="button">
+            Home Appliances
+        </a>
+        <div ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu">
+          <a ngbDropdownItem routerLink="/television" (click)="$event.preventDefault()">Televison</a>
+          <a ngbDropdownItem routerLink="/washinemachine" (click)="$event.preventDefault()">Washing Machine</a>
+          <a ngbDropdownItem routerLink="/refridgerator" (click)="$event.preventDefault()">Refridgerator</a>
+        
+        </div>
+      </li>
+
+      <li class="nav-item" ngbDropdown>
+        <a class="nav-link" ngbDropdownToggle id="navbarDropdown2" role="button">
+            Kitchen Appliances
+        </a>
+        <div ngbDropdownMenu aria-labelledby="navbarDropdown2" class="dropdown-menu">
+          <a ngbDropdownItem routerLink="/gasstove" (click)="$event.preventDefault()">Gas Stove</a>
+          <a ngbDropdownItem routerLink="/mixer" (click)="$event.preventDefault()">Mixer</a>
+        </div>
+      </li>
+
+      <li class="nav-item" ngbDropdown>
+        <a class="nav-link"ngbDropdownToggle id="navbarDropdown3" role="button">
+            Mobiles & Laptops
+        </a>
+        <div ngbDropdownMenu aria-labelledby="navbarDropdown3" class="dropdown-menu">
+          <a ngbDropdownItem routerLink="/mobiles" (click)="$event.preventDefault()">Mobiles</a>
+          <a ngbDropdownItem routerLink="/laptops" (click)="$event.preventDefault()">Laptop</a>
+          <a ngbDropdownItem routerLink="/accessories" (click)="$event.preventDefault()">Accessories</a>
+        </div>
+      </li>
+
+      <li class="nav-item" ngbDropdown>
+        <a class="nav-link" ngbDropdownToggle id="navbarDropdown2" role="button">
+            Beauty Care
+        </a>
+        <div ngbDropdownMenu aria-labelledby="navbarDropdown2" class="dropdown-menu">
+          <a ngbDropdownItem routerLink="/haircare" (click)="$event.preventDefault()">Hair Care</a>
+          <a ngbDropdownItem routerLink="/facial" (click)="$event.preventDefault()">Facial</a>
+        </div>
+      </li>
+
+      <li class="nav-item" ngbDropdown>
+        <a class="nav-link"ngbDropdownToggle id="navbarDropdown3" role="button">
+            Plumbing/Carpentery
+        </a>
+        <div ngbDropdownMenu aria-labelledby="navbarDropdown3" class="dropdown-menu">
+          <a ngbDropdownItem routerLink="/plumbing" (click)="$event.preventDefault()">Plumbing</a>
+          <a ngbDropdownItem routerLink="/carpentery" (click)="$event.preventDefault()">Carpentery</a>
+        </div>
+      </li>
+    </ul>
+        <button routerLink="/service" class="btn btn-info navbar-btn navbar-right">Book Now</button>
+  </div>
+</nav>
+
+
+  <div class="bg-img"> 
+    <img src="assets/images/maintenanceservices.jpg" width=1545 height="540px"/>
+  </div>
+
+  
+
+
+
+
+

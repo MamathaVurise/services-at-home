@@ -1,0 +1,11 @@
+p::after{
+    color:red;
+  }
+
+  .green {
+    background-color: green;
+  }
+  
+  .red {
+    background-color: red;
+  }

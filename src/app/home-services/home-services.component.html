@@ -1,0 +1,62 @@
+<div class="dispaly-form">
+<div class="jumbotron">
+    <h1 class="display-4 text-center">Services at your Home</h1>
+  </div>
+    <p><a routerLink="/">Home</a> <span> &#62; Book Now</span></p>     
+    <h2>Schedule A Service</h2>
+    <br>
+    
+        <div class="col-md-12 offset-md-4">
+            <form novalidate #form="ngForm" (submit)="OnSubmit(form)">
+                <input type="hidden" name="DetailId" [value]="service.formData.DetailId"/>
+                <div class="form-group col-md-3">
+                    <label>Name</label>
+                    <input class="form-control" name="Name" #Name="ngModel" [(ngModel)]="service.formData.Name"
+                    required [class.invalid]="Name.invalid && Name.touched">
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Applicance Name</label>
+                    <ng-select [items]="applianceName" bindLabel="name"
+                    placeholder="--select--"  [(ngModel)]="service.formData.applianceName"></ng-select> 
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Email Address</label>
+                    <input class="form-control" name="emailAddress" #emailAddress="ngModel" [(ngModel)]="service.formData.emailAddress"
+                    required [class.invalid]="emailAddress.invalid && emailAddress.touched">
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Address</label>
+                    <input class="form-control" name="Address" #Address="ngModel" [(ngModel)]="service.formData.Address"
+                    required [class.invalid]="Address.invalid && Address.touched">
+                </div>
+                <div class="form-group col-md-3">
+                        <label>Contact No</label>
+                        <input class="form-control" name="Contact" #Contact="ngModel" [(ngModel)]="service.formData.Contact"
+                        required maxlength="10" minlength="10" [class.invalid]="Contact.invalid && Contact.touched">
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Available Date</label>
+                    <input type="text" class="form-control" name="availableDate" #availableDate="ngModel" [(ngModel)]="service.formData.availableDate"
+                    bsDatepicker [class.invalid]="availableDate.invalid && availableDate.touched">
+                </div>
+            
+                <div class="form-group col-md-3">
+                        <label>Available Timings</label>
+                        <ng-select [items]="Timings" bindLabel="name"
+                                placeholder="--select--"  [(ngModel)]="service.formData.Timings"></ng-select> 
+                </div>
+            
+                <div class="form-group col-md-2">
+                    <button class="btn btn-info btn-lg btn-block" type="submit" [disabled]="form.invalid">Book Now</button>
+                </div>
+             </form>
+
+</div>
+
+
+</div>
+
+
+
+
+
